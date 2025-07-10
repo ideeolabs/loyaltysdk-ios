@@ -52,7 +52,7 @@ import LoyaltySDK
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    Loyalty.configure(appKey: "XXXXXXXXXXX") { result in
+    Loyalty.configure(appKey: "tu_app_key_aqui") { result in
         switch result {
         case .success:
             print("SDK configured correctly")
