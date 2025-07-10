@@ -1,0 +1,50 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LoyaltySDK
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import Foundation
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public protocol LoyaltyViewDelegate {
+  @objc optional func didReceiveEvent(name: Swift.String, payload: [Swift.String : Any])
+  @objc optional func loyaltyViewDidFinishLoading()
+  @objc optional func loyaltyViewDidDismiss()
+}
+@objc public protocol LoyaltyViewErrorDelegate {
+  @objc optional func loyaltyViewDidFailToLoad(error: any Swift.Error)
+}
+public enum Environment {
+  case development
+  case production
+  public static func == (a: LoyaltySDK.Environment, b: LoyaltySDK.Environment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct SDKConfiguration {
+  public let appKey: Swift.String
+  public var userCode: Swift.String?
+  public var webViewURL: Swift.String?
+}
+@_hasMissingDesignatedInitializers public class ILoyalty {
+  public static let shared: LoyaltySDK.ILoyalty
+  public static func configure(appKey: Swift.String, debug: Swift.Bool = false, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public func presentViewController(from parent: UIKit.UIViewController, token: Swift.String, environment: LoyaltySDK.Environment = .production, delegate: (any LoyaltySDK.LoyaltyViewDelegate)? = nil, errorDelegate: (any LoyaltySDK.LoyaltyViewErrorDelegate)? = nil, allowsCloseButton: Swift.Bool = false)
+  public func showViewController(token: Swift.String, environment: LoyaltySDK.Environment = .production, delegate: (any LoyaltySDK.LoyaltyViewDelegate)? = nil, errorDelegate: (any LoyaltySDK.LoyaltyViewErrorDelegate)? = nil, allowsCloseButton: Swift.Bool = false) -> LoyaltySDK.LoyaltyViewController?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class LoyaltyViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public var allowsCloseButton: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency weak public var eventDelegate: (any LoyaltySDK.LoyaltyViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency weak public var errorDelegate: (any LoyaltySDK.LoyaltyViewErrorDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: LoyaltySDK.SDKConfiguration, environment: LoyaltySDK.Environment, token: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @objc deinit
+}
+extension LoyaltySDK.Environment : Swift.Equatable {}
+extension LoyaltySDK.Environment : Swift.Hashable {}

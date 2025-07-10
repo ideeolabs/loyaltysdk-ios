@@ -1,0 +1,1742 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "LoyaltySDK",
+    "printedName": "LoyaltySDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoyaltyViewDelegate",
+        "printedName": "LoyaltyViewDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didReceiveEvent",
+            "printedName": "didReceiveEvent(name:payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewDelegate(im)didReceiveEventWithName:payload:",
+            "mangledName": "$s10LoyaltySDK0A12ViewDelegateP15didReceiveEvent4name7payloadySS_SDySSypGtF",
+            "moduleName": "LoyaltySDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : LoyaltySDK.LoyaltyViewDelegate>",
+            "sugared_genericSig": "<Self where Self : LoyaltySDK.LoyaltyViewDelegate>",
+            "protocolReq": true,
+            "objc_name": "didReceiveEventWithName:payload:",
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loyaltyViewDidFinishLoading",
+            "printedName": "loyaltyViewDidFinishLoading()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewDelegate(im)loyaltyViewDidFinishLoading",
+            "mangledName": "$s10LoyaltySDK0A12ViewDelegateP07loyaltyC16DidFinishLoadingyyF",
+            "moduleName": "LoyaltySDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : LoyaltySDK.LoyaltyViewDelegate>",
+            "sugared_genericSig": "<Self where Self : LoyaltySDK.LoyaltyViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loyaltyViewDidDismiss",
+            "printedName": "loyaltyViewDidDismiss()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewDelegate(im)loyaltyViewDidDismiss",
+            "mangledName": "$s10LoyaltySDK0A12ViewDelegateP07loyaltyC10DidDismissyyF",
+            "moduleName": "LoyaltySDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : LoyaltySDK.LoyaltyViewDelegate>",
+            "sugared_genericSig": "<Self where Self : LoyaltySDK.LoyaltyViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewDelegate",
+        "mangledName": "$s10LoyaltySDK0A12ViewDelegateP",
+        "moduleName": "LoyaltySDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoyaltyViewErrorDelegate",
+        "printedName": "LoyaltyViewErrorDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loyaltyViewDidFailToLoad",
+            "printedName": "loyaltyViewDidFailToLoad(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewErrorDelegate(im)loyaltyViewDidFailToLoadWithError:",
+            "mangledName": "$s10LoyaltySDK0A17ViewErrorDelegateP07loyaltyC13DidFailToLoad5errorys0D0_p_tF",
+            "moduleName": "LoyaltySDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : LoyaltySDK.LoyaltyViewErrorDelegate>",
+            "sugared_genericSig": "<Self where Self : LoyaltySDK.LoyaltyViewErrorDelegate>",
+            "protocolReq": true,
+            "objc_name": "loyaltyViewDidFailToLoadWithError:",
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewErrorDelegate",
+        "mangledName": "$s10LoyaltySDK0A17ViewErrorDelegateP",
+        "moduleName": "LoyaltySDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Environment",
+        "printedName": "Environment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "development",
+            "printedName": "development",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LoyaltySDK.Environment.Type) -> LoyaltySDK.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "LoyaltySDK.Environment",
+                    "usr": "s:10LoyaltySDK11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LoyaltySDK.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "LoyaltySDK.Environment",
+                        "usr": "s:10LoyaltySDK11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10LoyaltySDK11EnvironmentO11developmentyA2CmF",
+            "mangledName": "$s10LoyaltySDK11EnvironmentO11developmentyA2CmF",
+            "moduleName": "LoyaltySDK"
+          },
+          {
+            "kind": "Var",
+            "name": "production",
+            "printedName": "production",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LoyaltySDK.Environment.Type) -> LoyaltySDK.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "LoyaltySDK.Environment",
+                    "usr": "s:10LoyaltySDK11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LoyaltySDK.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "LoyaltySDK.Environment",
+                        "usr": "s:10LoyaltySDK11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10LoyaltySDK11EnvironmentO10productionyA2CmF",
+            "mangledName": "$s10LoyaltySDK11EnvironmentO10productionyA2CmF",
+            "moduleName": "LoyaltySDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "LoyaltySDK.Environment",
+                "usr": "s:10LoyaltySDK11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "LoyaltySDK.Environment",
+                "usr": "s:10LoyaltySDK11EnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10LoyaltySDK11EnvironmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10LoyaltySDK11EnvironmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "LoyaltySDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10LoyaltySDK11EnvironmentO9hashValueSivp",
+            "mangledName": "$s10LoyaltySDK11EnvironmentO9hashValueSivp",
+            "moduleName": "LoyaltySDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK11EnvironmentO9hashValueSivg",
+                "mangledName": "$s10LoyaltySDK11EnvironmentO9hashValueSivg",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10LoyaltySDK11EnvironmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10LoyaltySDK11EnvironmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "LoyaltySDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10LoyaltySDK11EnvironmentO",
+        "mangledName": "$s10LoyaltySDK11EnvironmentO",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SDKConfiguration",
+        "printedName": "SDKConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "appKey",
+            "printedName": "appKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10LoyaltySDK16SDKConfigurationV6appKeySSvp",
+            "mangledName": "$s10LoyaltySDK16SDKConfigurationV6appKeySSvp",
+            "moduleName": "LoyaltySDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK16SDKConfigurationV6appKeySSvg",
+                "mangledName": "$s10LoyaltySDK16SDKConfigurationV6appKeySSvg",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userCode",
+            "printedName": "userCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10LoyaltySDK16SDKConfigurationV8userCodeSSSgvp",
+            "mangledName": "$s10LoyaltySDK16SDKConfigurationV8userCodeSSSgvp",
+            "moduleName": "LoyaltySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK16SDKConfigurationV8userCodeSSSgvg",
+                "mangledName": "$s10LoyaltySDK16SDKConfigurationV8userCodeSSSgvg",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK16SDKConfigurationV8userCodeSSSgvs",
+                "mangledName": "$s10LoyaltySDK16SDKConfigurationV8userCodeSSSgvs",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK16SDKConfigurationV8userCodeSSSgvM",
+                "mangledName": "$s10LoyaltySDK16SDKConfigurationV8userCodeSSSgvM",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "webViewURL",
+            "printedName": "webViewURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10LoyaltySDK16SDKConfigurationV10webViewURLSSSgvp",
+            "mangledName": "$s10LoyaltySDK16SDKConfigurationV10webViewURLSSSgvp",
+            "moduleName": "LoyaltySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK16SDKConfigurationV10webViewURLSSSgvg",
+                "mangledName": "$s10LoyaltySDK16SDKConfigurationV10webViewURLSSSgvg",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK16SDKConfigurationV10webViewURLSSSgvs",
+                "mangledName": "$s10LoyaltySDK16SDKConfigurationV10webViewURLSSSgvs",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK16SDKConfigurationV10webViewURLSSSgvM",
+                "mangledName": "$s10LoyaltySDK16SDKConfigurationV10webViewURLSSSgvM",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10LoyaltySDK16SDKConfigurationV",
+        "mangledName": "$s10LoyaltySDK16SDKConfigurationV",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LoyaltySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ILoyalty",
+        "printedName": "ILoyalty",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ILoyalty",
+                "printedName": "LoyaltySDK.ILoyalty",
+                "usr": "s:10LoyaltySDK8ILoyaltyC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10LoyaltySDK8ILoyaltyC6sharedACvpZ",
+            "mangledName": "$s10LoyaltySDK8ILoyaltyC6sharedACvpZ",
+            "moduleName": "LoyaltySDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ILoyalty",
+                    "printedName": "LoyaltySDK.ILoyalty",
+                    "usr": "s:10LoyaltySDK8ILoyaltyC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK8ILoyaltyC6sharedACvgZ",
+                "mangledName": "$s10LoyaltySDK8ILoyaltyC6sharedACvgZ",
+                "moduleName": "LoyaltySDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(appKey:debug:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10LoyaltySDK8ILoyaltyC9configure6appKey5debug10completionySS_Sbys6ResultOyyts5Error_pGctFZ",
+            "mangledName": "$s10LoyaltySDK8ILoyaltyC9configure6appKey5debug10completionySS_Sbys6ResultOyyts5Error_pGctFZ",
+            "moduleName": "LoyaltySDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "presentViewController",
+            "printedName": "presentViewController(from:token:environment:delegate:errorDelegate:allowsCloseButton:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "LoyaltySDK.Environment",
+                "hasDefaultArg": true,
+                "usr": "s:10LoyaltySDK11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any LoyaltySDK.LoyaltyViewDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoyaltyViewDelegate",
+                    "printedName": "any LoyaltySDK.LoyaltyViewDelegate",
+                    "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any LoyaltySDK.LoyaltyViewErrorDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoyaltyViewErrorDelegate",
+                    "printedName": "any LoyaltySDK.LoyaltyViewErrorDelegate",
+                    "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewErrorDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10LoyaltySDK8ILoyaltyC21presentViewController4from5token11environment8delegate13errorDelegate17allowsCloseButtonySo06UIViewF0C_SSAA11EnvironmentOAA0aeL0_pSgAA0ae5ErrorL0_pSgSbtF",
+            "mangledName": "$s10LoyaltySDK8ILoyaltyC21presentViewController4from5token11environment8delegate13errorDelegate17allowsCloseButtonySo06UIViewF0C_SSAA11EnvironmentOAA0aeL0_pSgAA0ae5ErrorL0_pSgSbtF",
+            "moduleName": "LoyaltySDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showViewController",
+            "printedName": "showViewController(token:environment:delegate:errorDelegate:allowsCloseButton:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LoyaltySDK.LoyaltyViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoyaltyViewController",
+                    "printedName": "LoyaltySDK.LoyaltyViewController",
+                    "usr": "c:@M@LoyaltySDK@objc(cs)LoyaltyViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "LoyaltySDK.Environment",
+                "hasDefaultArg": true,
+                "usr": "s:10LoyaltySDK11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any LoyaltySDK.LoyaltyViewDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoyaltyViewDelegate",
+                    "printedName": "any LoyaltySDK.LoyaltyViewDelegate",
+                    "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any LoyaltySDK.LoyaltyViewErrorDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoyaltyViewErrorDelegate",
+                    "printedName": "any LoyaltySDK.LoyaltyViewErrorDelegate",
+                    "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewErrorDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10LoyaltySDK8ILoyaltyC18showViewController5token11environment8delegate13errorDelegate17allowsCloseButtonAA0aeF0CSgSS_AA11EnvironmentOAA0aeK0_pSgAA0ae5ErrorK0_pSgSbtF",
+            "mangledName": "$s10LoyaltySDK8ILoyaltyC18showViewController5token11environment8delegate13errorDelegate17allowsCloseButtonAA0aeF0CSgSS_AA11EnvironmentOAA0aeK0_pSgAA0ae5ErrorK0_pSgSbtF",
+            "moduleName": "LoyaltySDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10LoyaltySDK8ILoyaltyC",
+        "mangledName": "$s10LoyaltySDK8ILoyaltyC",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "LoyaltySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoyaltyViewController",
+        "printedName": "LoyaltyViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "allowsCloseButton",
+            "printedName": "allowsCloseButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10LoyaltySDK0A14ViewControllerC17allowsCloseButtonSbvp",
+            "mangledName": "$s10LoyaltySDK0A14ViewControllerC17allowsCloseButtonSbvp",
+            "moduleName": "LoyaltySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK0A14ViewControllerC17allowsCloseButtonSbvg",
+                "mangledName": "$s10LoyaltySDK0A14ViewControllerC17allowsCloseButtonSbvg",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK0A14ViewControllerC17allowsCloseButtonSbvs",
+                "mangledName": "$s10LoyaltySDK0A14ViewControllerC17allowsCloseButtonSbvs",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK0A14ViewControllerC17allowsCloseButtonSbvM",
+                "mangledName": "$s10LoyaltySDK0A14ViewControllerC17allowsCloseButtonSbvM",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventDelegate",
+            "printedName": "eventDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any LoyaltySDK.LoyaltyViewDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10LoyaltySDK0A14ViewControllerC13eventDelegateAA0acF0_pSgvp",
+            "mangledName": "$s10LoyaltySDK0A14ViewControllerC13eventDelegateAA0acF0_pSgvp",
+            "moduleName": "LoyaltySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any LoyaltySDK.LoyaltyViewDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoyaltyViewDelegate",
+                        "printedName": "any LoyaltySDK.LoyaltyViewDelegate",
+                        "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK0A14ViewControllerC13eventDelegateAA0acF0_pSgvg",
+                "mangledName": "$s10LoyaltySDK0A14ViewControllerC13eventDelegateAA0acF0_pSgvg",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any LoyaltySDK.LoyaltyViewDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoyaltyViewDelegate",
+                        "printedName": "any LoyaltySDK.LoyaltyViewDelegate",
+                        "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK0A14ViewControllerC13eventDelegateAA0acF0_pSgvs",
+                "mangledName": "$s10LoyaltySDK0A14ViewControllerC13eventDelegateAA0acF0_pSgvs",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK0A14ViewControllerC13eventDelegateAA0acF0_pSgvM",
+                "mangledName": "$s10LoyaltySDK0A14ViewControllerC13eventDelegateAA0acF0_pSgvM",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDelegate",
+            "printedName": "errorDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any LoyaltySDK.LoyaltyViewErrorDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10LoyaltySDK0A14ViewControllerC13errorDelegateAA0ac5ErrorF0_pSgvp",
+            "mangledName": "$s10LoyaltySDK0A14ViewControllerC13errorDelegateAA0ac5ErrorF0_pSgvp",
+            "moduleName": "LoyaltySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any LoyaltySDK.LoyaltyViewErrorDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoyaltyViewErrorDelegate",
+                        "printedName": "any LoyaltySDK.LoyaltyViewErrorDelegate",
+                        "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewErrorDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK0A14ViewControllerC13errorDelegateAA0ac5ErrorF0_pSgvg",
+                "mangledName": "$s10LoyaltySDK0A14ViewControllerC13errorDelegateAA0ac5ErrorF0_pSgvg",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any LoyaltySDK.LoyaltyViewErrorDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoyaltyViewErrorDelegate",
+                        "printedName": "any LoyaltySDK.LoyaltyViewErrorDelegate",
+                        "usr": "c:@M@LoyaltySDK@objc(pl)LoyaltyViewErrorDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK0A14ViewControllerC13errorDelegateAA0ac5ErrorF0_pSgvs",
+                "mangledName": "$s10LoyaltySDK0A14ViewControllerC13errorDelegateAA0ac5ErrorF0_pSgvs",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10LoyaltySDK0A14ViewControllerC13errorDelegateAA0ac5ErrorF0_pSgvM",
+                "mangledName": "$s10LoyaltySDK0A14ViewControllerC13errorDelegateAA0ac5ErrorF0_pSgvM",
+                "moduleName": "LoyaltySDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:environment:token:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoyaltyViewController",
+                "printedName": "LoyaltySDK.LoyaltyViewController",
+                "usr": "c:@M@LoyaltySDK@objc(cs)LoyaltyViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDKConfiguration",
+                "printedName": "LoyaltySDK.SDKConfiguration",
+                "usr": "s:10LoyaltySDK16SDKConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "LoyaltySDK.Environment",
+                "usr": "s:10LoyaltySDK11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10LoyaltySDK0A14ViewControllerC13configuration11environment5tokenAcA16SDKConfigurationV_AA11EnvironmentOSStcfc",
+            "mangledName": "$s10LoyaltySDK0A14ViewControllerC13configuration11environment5tokenAcA16SDKConfigurationV_AA11EnvironmentOSStcfc",
+            "moduleName": "LoyaltySDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LoyaltySDK@objc(cs)LoyaltyViewController(im)viewDidLoad",
+            "mangledName": "$s10LoyaltySDK0A14ViewControllerC11viewDidLoadyyF",
+            "moduleName": "LoyaltySDK",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoyaltyViewController",
+                "printedName": "LoyaltySDK.LoyaltyViewController",
+                "usr": "c:@M@LoyaltySDK@objc(cs)LoyaltyViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@LoyaltySDK@objc(cs)LoyaltyViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s10LoyaltySDK0A14ViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "LoyaltySDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@LoyaltySDK@objc(cs)LoyaltyViewController",
+        "mangledName": "$s10LoyaltySDK0A14ViewControllerC",
+        "moduleName": "LoyaltySDK",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Auth\/AuthModels.swift",
+      "kind": "StringLiteral",
+      "offset": 403,
+      "length": 11,
+      "value": "\"user_code\""
+    },
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Auth\/AuthModels.swift",
+      "kind": "StringLiteral",
+      "offset": 506,
+      "length": 14,
+      "value": "\"web_view_url\""
+    },
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Auth\/AuthModels.swift",
+      "kind": "StringLiteral",
+      "offset": 553,
+      "length": 19,
+      "value": "\"device_registered\""
+    },
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Auth\/AuthService.swift",
+      "kind": "StringLiteral",
+      "offset": 269,
+      "length": 20,
+      "value": "\"com.lylty.sdk.uuid\""
+    },
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Core\/ILoyalty.swift",
+      "kind": "BooleanLiteral",
+      "offset": 683,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Core\/ILoyalty.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2232,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Core\/ILoyalty.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3465,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Utilities\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 140,
+      "length": 7,
+      "value": "\"DEBUG\""
+    },
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Utilities\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 164,
+      "length": 6,
+      "value": "\"INFO\""
+    },
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Utilities\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 188,
+      "length": 7,
+      "value": "\"ERROR\""
+    },
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Utilities\/Logger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 265,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hugoreza\/Developer\/Ideeo-Fer\/banorte\/loyalty\/sdk-project\/LoyaltySDK\/Sources\/LoyaltySDK\/Web\/LoyaltyViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 256,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
