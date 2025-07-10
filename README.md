@@ -26,7 +26,8 @@
 
 ### 1. Obtener el SDK
 
-- Descargar el archivo `LoyaltySDK.xcframework` desde la carpeta SDK
+- Descargar el archivo `LoyaltySDK.xcframework.zip` desde la carpeta SDK
+- Descomprimir el archivo `LoyaltySDK.xcframework.zip`
 - Abra su proyecto Xcode
 - Arrastre `LoyaltySDK.xcframework` a la sección Project Navigator
 - Asegúrese de marcar Copy items if needed
