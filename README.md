@@ -18,8 +18,8 @@
 ## 🚀 Requisitos Técnicos
 
 - Xcode 12 o superior
-- iOS 13 o superior
-- Swift 5+
+- iOS 15.6 o superior
+- Swift 6+
 
 
 ## 📦 Instalación del SDK
@@ -52,19 +52,58 @@ import LoyaltySDK
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    Loyalty.configure(appKey: "test_FJiceIdJtRJbyiwkDa+vxG+xpfVwoLg8q4EhfCDZPF4=") { result in
+    ILoyalty.configure(
+        appKey: "test_FJiceIdJtRJbyiwkDa+vxG+xpfVwoLg8q4EhfCDZPF4=",
+        environment: .development, // Opcional: .development o .production (default: .production)
+        debug: true // Opcional: Habilita logs (default: false)
+    ) { result in
         switch result {
         case .success:
-            print("SDK configured correctly")
+            print("SDK configurado correctamente")
         case .failure(let error):
-            print("LoyaltySDK error: \(error.localizedDescription)")
+            print("Error en ILoyaltySDK: \(error.localizedDescription)")
         }
     }
-
+    
     return true
 }
 ```
 ### ℹ️ Este paso debe ejecutarse una sola vez al inicio de la app.
+
+### 3. Mostrar la Vista del SDK (Ejemplo en un UIViewController)
+
+```swift
+Task { @MainActor in
+    if let sdkVC = await ILoyalty.shared.showViewController(
+        tokenSAML: "token_saml_de_usuario",    // Requerido: Autenticación del usuario
+        section: "loyalty",                    // Sección a mostrar
+        idSection: "hy6",                      // ID de la sección
+        typeView: 1                            // Tamaño de la vista (1 = 80%, 2 = 100%)
+    ) {
+        // Configurar delegado para eventos del SDK
+        sdkVC.eventDelegate = self
+        
+        // Integrar la vista del SDK en el ViewController actual
+        self.sdkViewController = sdkVC
+        self.addChild(sdkVC)
+        sdkVC.view.frame = self.view.bounds
+        sdkVC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.view.addSubview(sdkVC.view)
+        sdkVC.didMove(toParent: self)
+    } else {
+        print("Error: No se pudo crear LoyaltyViewController")
+    }
+}
+```
+
+### 4. Manejo de Eventos Genéricos desde el SDK
+Para recibir eventos genéricos enviados desde el SDK, implementar el método delegado `didReceiveEvent(name:payload:)` en tu UIViewController.
+
+```swift
+func didReceiveEvent(name: String, payload: [String : Any]) {
+        print("Evento recibido: \(name), datos: \(payload)")
+}
+```
 
 ## 🔍 Ejemplo de Uso
 La aplicación de referencia ubicada en `DemoApp/UIKIt-Storyboard` muestra cómo:
