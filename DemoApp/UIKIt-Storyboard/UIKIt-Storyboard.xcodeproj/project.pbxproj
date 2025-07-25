@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C501DD772E1F22F400C26EA0 /* Embed Frameworks */ = {
+		C5E446782E3146D6005B3B67 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -23,36 +23,9 @@
 		C501DCB92E1D9AEC00C26EA0 /* UIKIt-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKIt-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C501DCCB2E1D9AEE00C26EA0 /* Exceptions for "UIKIt-Storyboard" folder in "UIKIt-Storyboard" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = C501DCB82E1D9AEC00C26EA0 /* UIKIt-Storyboard */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		C56CE5232E1F31530095E4AE /* Exceptions for "UIKIt-Storyboard" folder in "Embed Frameworks" phase from "UIKIt-Storyboard" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			attributesByRelativePath = {
-				LoyaltySDK.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
-			};
-			buildPhase = C501DD772E1F22F400C26EA0 /* Embed Frameworks */;
-			membershipExceptions = (
-				LoyaltySDK.xcframework,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C501DCBB2E1D9AEC00C26EA0 /* UIKIt-Storyboard */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				C501DCCB2E1D9AEE00C26EA0 /* Exceptions for "UIKIt-Storyboard" folder in "UIKIt-Storyboard" target */,
-				C56CE5232E1F31530095E4AE /* Exceptions for "UIKIt-Storyboard" folder in "Embed Frameworks" phase from "UIKIt-Storyboard" target */,
-			);
 			path = "UIKIt-Storyboard";
 			sourceTree = "<group>";
 		};
@@ -95,7 +68,7 @@
 				C501DCB52E1D9AEC00C26EA0 /* Sources */,
 				C501DCB62E1D9AEC00C26EA0 /* Frameworks */,
 				C501DCB72E1D9AEC00C26EA0 /* Resources */,
-				C501DD772E1F22F400C26EA0 /* Embed Frameworks */,
+				C5E446782E3146D6005B3B67 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,22 +158,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/UIKIt-Storyboard",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.UIKIt-Storyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -226,22 +190,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/UIKIt-Storyboard",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.UIKIt-Storyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
