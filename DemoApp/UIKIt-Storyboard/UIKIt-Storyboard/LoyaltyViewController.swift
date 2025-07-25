@@ -80,7 +80,7 @@ class LoyaltyTabViewController: UIViewController, LoyaltyViewDelegate {
     
     
     func didReceiveEvent(name: String, payload: [String : Any]) {
-        print("Evento recibido desde la web: \(name), datos: \(payload)")
+        print("Evento recibido: \(name), datos: \(payload)")
         
         let payloadString = payload.map { "\($0.key): \($0.value)" }.joined(separator: "\n")
         
