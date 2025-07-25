@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // LoyaltySDK
-        ILoyalty.configure(appKey: "test_FJiceIdJtRJbyiwkDa+vxG+xpfVwoLg8q4EhfCDZPF4=") { result in
+        ILoyalty.configure(appKey: "test_FJiceIdJtRJbyiwkDa+vxG+xpfVwoLg8q4EhfCDZPF4=", debug: true) { result in
             switch result {
             case .success:
                 print("SDK configured correctly")
@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let tabBarAppearance = UITabBarAppearance()
             tabBarAppearance.configureWithTransparentBackground()
             tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [
-                .foregroundColor: UIColor.gray,
+                .foregroundColor: UIColor.darkGray,
                 .font: UIFont.systemFont(ofSize: 16)
             ]
             
